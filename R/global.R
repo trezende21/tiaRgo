@@ -158,7 +158,7 @@ calc_corr <- function(x = covid.trim.groups,
   aov <- list()
 
   for(i in names4.r2vals){
-    r2vals[[i]] <- covid::r2.lm(x = x, c = i)
+    r2vals[[i]] <- tiaRgo::r2.lm(x = x, c = i)
   }
 
   r2vals <- unlist(r2vals)
